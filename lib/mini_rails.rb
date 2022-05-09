@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "mini_rails/version"
+require "mini_rails/version"
 require "mini_rails/routing"
+require "mini_rails/util"
+require "mini_rails/dependencies"
 
 module MiniRails
   class Error < StandardError; end

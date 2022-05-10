@@ -5,6 +5,7 @@ require "mini_rails/routing"
 require "mini_rails/util"
 require "mini_rails/dependencies"
 require "mini_rails/controller"
+require "mini_rails/file_model"
 
 module MiniRails
   class Error < StandardError; end

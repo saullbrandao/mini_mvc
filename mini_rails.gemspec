@@ -38,5 +38,6 @@ Gem::Specification.new do |spec|
   # guide at: https://bundler.io/guides/creating_gem.html
   spec.add_runtime_dependency "rack"
   spec.add_runtime_dependency "erubis"
+  spec.add_runtime_dependency "multi_json"
   spec.add_development_dependency "rack-test"
 end

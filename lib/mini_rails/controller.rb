@@ -1,7 +1,10 @@
 require 'erubis'
+require 'mini_rails/file_model'
 
 module MiniRails
   class Controller
+    include MiniRails::Model
+    
     def initialize(env)
       @env = env
     end

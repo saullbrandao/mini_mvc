@@ -4,6 +4,7 @@ require "mini_rails/version"
 require "mini_rails/routing"
 require "mini_rails/util"
 require "mini_rails/dependencies"
+require "mini_rails/controller"
 
 module MiniRails
   class Error < StandardError; end
@@ -18,16 +19,6 @@ module MiniRails
       controller = klass.new(env)
       text = controller.send(act)
       [200, { "Content-Type" => "text/plain" }, [text]]
-    end
-  end
-
-  class Controller
-    def initialize(env)
-      @env = env
-    end
-
-    def env
-      @env
     end
   end
 end
